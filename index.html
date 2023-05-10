@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tesseractjs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js'></script>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                TessearactJS Demo
+            </h1>
+        </div>
+        <div class="columns is-vcentered">
+            <div class="box column">
+                <div class="field">
+                    <label class="label">Image URL</label>
+                    <div class="control">
+                        <input class="input" type="file" id="uploader">
+                        <!-- <input class="input" type="url" id="img-url" -->
+                        <!-- placeholder="e.g. https://sm-nitk.vlabs.ac.in/exp/izod-impact-test/simulation/images/i4.png"> -->
+                    </div>
+                </div>
+                <!-- <button class="button is-primary" onclick="onLoadImage()">Load Image</button> -->
+
+                <div class="box container" id="img-container">
+                </div>
+            </div>
+            <button class="button is-primary column" onclick="onGetTextFromImage()">Get Text</button>
+            <div class="box column" id="ocr-text">
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
